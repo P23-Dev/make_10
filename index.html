@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Welcome to the Math Puzzle Game!</h1>
+
+        <div id="name-form">
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="set-name">Set Name</button>
+        </div>
+
+        <div id="user-info" style="display:none;">
+            <p>Hello, <span id="user-name">Guest</span>! Your score: <span id="score">0</span></p>
+            <div id="language-selection">
+                <label for="language-select">Select Language:</label>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="cz">Czech</option>
+                </select>
+                <button id="change-language">Change Language</button>
+            </div>
+        </div>
+
+        <div id="puzzle" style="display:none;">
+            <h2>Use these digits: <span id="digits"></span></h2>
+            <input type="text" id="expression" placeholder="Enter your expression to make 10">
+            <button id="submit-button">Submit</button>
+            <button id="next-button" style="display:none;">Next Puzzle</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
