@@ -1,49 +1,26 @@
+/* Basic styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
     padding: 20px;
 }
 
-h1 {
+#game {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
-    color: #4CAF50;
 }
 
-input, button {
+input, select, button {
     padding: 10px;
     margin: 10px 0;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+/* Highlight error */
+.highlight {
+    color: red;
+    font-weight: bold;
 }
-
-#puzzle {
-    margin-top: 20px;
-}
-
-#next-button {
-    background-color: #2196F3;
-}
-
-#next-button:hover {
-    background-color: #0b7dda;
-}
-
